@@ -1,0 +1,8 @@
+homepage: https://lunio.ai
+description: Installs the Lunio conversion tracking script and fires a conversion event. Replaces the need to manually add a Custom HTML tag in GTM.
+categories:
+  - ANALYTICS
+permissions:
+  - injectScript
+  - callInWindow
+  - logToConsole
