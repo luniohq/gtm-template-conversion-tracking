@@ -1,5 +1,5 @@
 homepage: "https://www.lunio.ai/"
 documentation: "https://github.com/luniohq/gtm-template-conversion-tracking"
 versions:
-  - sha: c510458df7c65334eb6a3dd446d7651dfe364beb
+  - sha: 60dc1e3f7595fcac59d2f95fa7569f009c28c4da
     changeNotes: Initial release.
