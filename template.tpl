@@ -14,7 +14,7 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Lunio Conversion Tracking",
-  "categories": ["ANALYTICS"],
+  "categories": ["CONVERSIONS", "ANALYTICS"],
   "brand": {
     "id": "brand_dummy",
     "displayName": "Lunio"
