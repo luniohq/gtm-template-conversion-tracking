@@ -1,7 +1,8 @@
-version: 1
-title: Lunio Conversion Tracking
-homepage: https://github.com/luniohq/gtm-template-conversion-tracking/blob/main/README.md
-description: Installs the Lunio conversion tracking script and fires a conversion event. Replaces the need to manually add a Custom HTML tag in GTM.
+homepage: "https://lunio.ai"
+documentation: "https://github.com/luniohq/gtm-template-conversion-tracking/blob/main/README.md"
+versions:
+  - sha: c510458df7c65334eb6a3dd446d7651dfe364beb
+    changeNotes: Initial release.
 categories:
   - ANALYTICS
 permissions:
