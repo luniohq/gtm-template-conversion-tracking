@@ -1,11 +1,5 @@
-homepage: "https://lunio.ai"
-documentation: "https://github.com/luniohq/gtm-template-conversion-tracking/blob/main/README.md"
+homepage: "https://www.lunio.ai/"
+documentation: "https://github.com/luniohq/gtm-template-conversion-tracking"
 versions:
   - sha: c510458df7c65334eb6a3dd446d7651dfe364beb
     changeNotes: Initial release.
-categories:
-  - ANALYTICS
-permissions:
-  - injectScript
-  - callInWindow
-  - logToConsole
