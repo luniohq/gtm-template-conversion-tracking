@@ -1,37 +1,46 @@
 # Lunio Conversion Tracking — GTM Template
 
-This template installs the Lunio conversion tracking script and fires a 
-conversion event directly from Google Tag Manager, replacing the need to 
-manually create a Custom HTML tag.
+This template fires a Lunio conversion event directly from Google Tag Manager, 
+replacing the need to manually add a Custom HTML conversion tag.
 
 ## Prerequisites
-
 - A Google Tag Manager **web container**
 - A Lunio account with admin access
-- A generated conversion script from the Lunio dashboard
+- The **Lunio mplat script** already installed on your site (see below)
 
-## How to get your credentials
+## Step 1 — Install the Lunio mplat script
+Before using this template, the Lunio mplat script must be installed on your site.
+Add the following to the `<head>` of every page, or via a GTM Custom HTML tag 
+on All Pages:
+```html
+<script>
+  if(!document.getElementById('lunioScript')) {
+    var lunioScript = document.createElement('script');
+    lunioScript.id = 'lunioScript';
+    lunioScript.async = true;
+    lunioScript.src = 'YOUR_LUNIO_MPLAT_SCRIPT_URL';
+    document.head.appendChild(lunioScript);
+  }
+</script>
+```
 
+## Step 2 — Get your credentials
 1. In Lunio, go to **System Settings > Integrations > Conversions**
 2. Click **Create conversion** and configure your conversion
 3. Click **Generate** then **View** in the Script column
 4. From the script, copy:
-   - The **Script URL** (the `src` value in the script tag)
-   - The **Conversion ID** (the UUID passed to `LunioTrackConversion`)
+   - The **Conversion ID** (the ID passed to `LunioTrackConversion`)
 
 ## Template fields
-
 | Field | Required | Description |
 |---|---|---|
-| Script URL | Yes | Your unique Lunio script URL from the dashboard |
-| Conversion ID | Yes | Your Lunio conversion UUID |
+| Conversion ID | Yes | Your Lunio conversion ID |
 | Order ID | No | Optional. Map to your order ID variable e.g. `{{dlv - order_id}}` |
 
-## Setup in GTM
-
+## Step 3 — Setup in GTM
 1. Add this template from the Community Template Gallery
 2. Create a new tag using the **Lunio Conversion Tracking** template
-3. Fill in your Script URL and Conversion ID from the Lunio dashboard
+3. Fill in your Conversion ID from the Lunio dashboard
 4. Optionally map Order ID to a data layer variable if you want to pass 
    order values
 5. Set your trigger to the conversion event you want to track 
@@ -39,9 +48,8 @@ manually create a Custom HTML tag.
 6. Save and publish
 
 ## Notes
-
 - This template is for **web (client-side) GTM containers** only
-- The script will only be injected once per page even if the tag 
-  fires multiple times
+- The template will automatically wait for the Lunio mplat script to load 
+  before firing the conversion
 - For help finding your credentials or configuring conversions, 
   visit [lunio.ai](https://lunio.ai) or contact your account manager
