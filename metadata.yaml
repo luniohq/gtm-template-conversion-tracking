@@ -1,5 +1,7 @@
 homepage: "https://www.lunio.ai/"
 documentation: "https://github.com/luniohq/gtm-template-conversion-tracking"
 versions:
+  - sha: ea5bf76fb41f3533b48ec562daccad91b678e0ce
+    changeNotes: Added support for 10 ad platforms (Google, Meta, LinkedIn, TikTok, Microsoft, Twitter, Reddit, DV360, Taboola, Pinterest) and lead conversion type.
   - sha: 395b9905ad5932a24ea398fe0a45e466848f4c61
     changeNotes: Initial release.
