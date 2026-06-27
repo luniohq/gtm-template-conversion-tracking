@@ -48,7 +48,7 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "TEXT",
     "name": "config_id",
-    "displayName": "Config ID (Required)",
+    "displayName": "Conversion ID (Required)",
     "simpleValueType": true,
     "valueValidators": [
       {
