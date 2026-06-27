@@ -49,23 +49,86 @@ on All Pages:
 
 ### Ad Platforms *(purchase only)*
 Enable the platforms you want to pass click and campaign data for. Each platform
-exposes its own set of fields once enabled:
+exposes its own fields once enabled.
 
-| Platform | Click ID field |
+**Google**
+| Field | Description |
 |---|---|
-| Google | GCLID |
-| Meta | FBCLID |
-| LinkedIn | li_fat_id |
-| TikTok | TTCLID |
-| Microsoft (Bing) | msclkid |
-| Twitter (X) | twclid |
-| Reddit | rdt_cid |
-| DV360 | dclid |
-| Taboola | tblci |
-| Pinterest | epik |
+| Click ID (GCLID) | Google click ID |
+| Campaign ID | |
+| Ad Group ID | |
+| Keyword | |
+| Match Type | |
+| Network | |
 
-Each platform also includes fields for Campaign ID, Ad Group/Set/Creative ID,
-and other platform-specific parameters.
+**Meta**
+| Field | Description |
+|---|---|
+| Click ID (FBCLID) | Meta click ID |
+| Campaign ID | |
+| Ad Set ID | |
+| Ad ID | |
+
+**LinkedIn**
+| Field | Description |
+|---|---|
+| Click ID | LinkedIn click ID (li_fat_id) |
+| Campaign Group ID | |
+| Campaign ID | |
+| Creative ID | |
+
+**TikTok**
+| Field | Description |
+|---|---|
+| Click ID (TTCLID) | TikTok click ID |
+| Campaign ID | |
+| Ad Group ID | |
+| Ad ID | |
+
+**Microsoft (Bing)**
+| Field | Description |
+|---|---|
+| Click ID (msclkid) | Microsoft click ID |
+| Campaign ID | |
+| Ad Group ID | |
+| Ad ID | |
+
+**Twitter (X)**
+| Field | Description |
+|---|---|
+| Click ID (twclid) | Twitter click ID |
+| Campaign ID | |
+| Ad Group ID | |
+| Ad ID | |
+
+**Reddit**
+| Field | Description |
+|---|---|
+| Click ID (rdt_cid) | Reddit click ID |
+| Campaign ID | |
+| Ad Group ID | |
+| Ad ID | |
+
+**DV360**
+| Field | Description |
+|---|---|
+| Click ID (dclid) | DV360 click ID |
+| Campaign ID | |
+| Insertion Order ID | |
+| Line Item ID | |
+| Creative ID | |
+
+**Taboola**
+| Field | Description |
+|---|---|
+| Click ID (tblci) | Taboola click ID |
+| Campaign ID | |
+| Campaign Item ID | |
+
+**Pinterest**
+| Field | Description |
+|---|---|
+| Click ID (epik) | Pinterest click ID |
 
 ## Step 3 — Setup in GTM
 1. Add this template from the Community Template Gallery
